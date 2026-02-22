@@ -13,14 +13,14 @@ import Test from './components/Test'
 import Index from './pages/Index'
 
 function App() {
-  // const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true)
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => setLoading(false), 3000)
-  //   return () => clearTimeout(timer)
-  // }, [])
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000)
+    return () => clearTimeout(timer)
+  }, [])
 
-  // if (loading) return <LoaderInitial />
+  if (loading) return <LoaderInitial />
 
   return (
     <Router>
